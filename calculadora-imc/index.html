@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadore imc</title>
+    <style>
+        body{
+            background-color: rgb(10, 88, 112);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        section{
+            background-color: white;
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            margin-top: 50px;
+
+        }
+        section form{
+            color: black;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        label{
+            margin-top: 15px;
+        }
+        input{
+            margin: auto;
+            margin-bottom: 40px;
+            margin-top:10px ;
+            margin-left: auto;
+            color: black;
+        }
+         #calcularIMC{
+            outline: none;
+            text-decoration: none;
+            border: none;
+            background-color: blue;
+            color: white;
+            padding: 15px;
+            width: auto;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calculadora IMC</h1>
+    </header>
+   <section>
+       <form>
+        
+           <label for="altura">Altura em metros (ex:1.70 metros)</label>
+           <input type="text" id="altura">
+
+           <label for="peso">Peso em quilos</label>
+           <input type="number" id="peso">
+
+           <input type="submit" value="calcular imc" id="calcularIMC">
+           
+       </form>
+
+       <div class="resposta"></div>
+
+   </section>
+
+
+
+    <script  src="jquery-3.6.1.min.js"></script>
+    <script  src="jquery.mask.js"></script>
+    <script  src="script.js"></script>
+</body>
+</html>

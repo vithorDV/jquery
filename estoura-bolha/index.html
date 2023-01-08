@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+        }
+        .area-placar{
+            width: 250px;
+            height: 100px;
+            
+            left: 0;
+            top: 0;
+            background-color: #DDD;
+            text-align: center;
+        }
+        #placar{
+            font-size: 50px;
+        } 
+        .bola{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #000;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="area-placar">
+        Bolas estouradas: <br>
+        <div id="placar">0</div>
+        <button id="começar">começar o jogo</button>
+        <button id="terminar">terminar o jogo</button>
+    </div>
+    <div class="area-placar">
+        <p>placar-vermelho</p>
+        <div id="placar-vermelho">
+            0
+        </div>
+    </div>
+    <div class="area-placar">
+        <p>placar-azul</p>
+        <div id="placar-azul">
+            0
+        </div>
+    </div>
+    <div class="area-placar">
+        <p>placar-verde</p>
+        <div id="placar-verde">
+            0
+        </div>
+    </div>
+
+    
+
+
+
+
+    <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
